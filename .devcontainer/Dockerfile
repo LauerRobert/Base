@@ -3,7 +3,7 @@ FROM ubuntu:latest
 
 # Install necessary packages
 RUN apt-get update && \
-    apt-get install -y clang cmake curl git
+    apt-get install -y clang cmake cmake-curses-gui curl git
 
 # Set the working directory
 WORKDIR /workspaces/Base
