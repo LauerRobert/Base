@@ -1,11 +1,22 @@
 {
-   "name": "My Base",
-   "image": "lar2lr_base_image:latest"
+   "name": "LAR2LR Base",
+   "image": "lar2lr_base_image:latest",
 
    "customizations": {
       "vscode": {
+         "settings": {
+            "http.proxyStrictSSL": false,
+            "editor.rulers": [
+               120
+            ]
+      },
          "extensions": [
-            "llvm-vs-code-extensions.vscode-clangd"
+            "ms-azuretools.vscode-docker",
+            "ms-vscode.cpptools",
+            "ms-vscode-remote.vscode-remote-extensionpack",
+            "llvm-vs-code-extensions.vscode-clangd",
+            "ms-vscode.cmake-tools",
+            "ms-vscode.json"
          ]
       }
    }

@@ -3,10 +3,10 @@ FROM ubuntu:latest
 
 # Install necessary packages
 RUN apt-get update && \
-    apt-get install -y clang cmake git
+    apt-get install -y clang cmake curl git
 
 # Set the working directory
-WORKDIR /workspace
+WORKDIR /workspaces/Base
 
 # You can add more instructions if needed, such as copying your source code or additional dependencies.
 
